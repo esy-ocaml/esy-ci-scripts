@@ -1,10 +1,9 @@
 # esy-ci-scripts
----
-### Azure CI Pipeline for building esy projects
+##### Azure CI Pipeline for building esy projects
 
 ## Why?
 
-I've been moving many of my personal projects to Azure CI from Travis/AppVeyor, for the following reasons:
+I've been moving many of my personal projects to Azure CI, for the following reasons:
 
 - Cross-platform support
 - Consistent language for builds on all platforms
