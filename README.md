@@ -10,4 +10,4 @@
 ## Special Thanks
 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) for the great tooling!
-- @strid for teaching me everything I know about Azure CI :)
+- @ulrikstrid for teaching me everything I know about Azure CI :)
