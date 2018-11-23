@@ -1,0 +1,10 @@
+{
+  "name": "esy-ci-pipelines",
+  "version": "0.1.0",
+  "description": "Simple test project for a pipeline build", "license": "MIT",
+  "esy": {
+    "build": "echo hello world!"
+  },
+  "dependencies": {
+  }
+}

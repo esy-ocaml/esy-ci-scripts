@@ -21,6 +21,8 @@ A few projects that are using this setup:
 - Copy `azure-pipelines.yml` and `esy-build-steps.yml` to your project's directory
 - Profit
 
+You can see the example pipeline in action [here](https://bryphe.visualstudio.com/esy-ci-scripts/_build?definitionId=11).
+
 ## Customization
 
 - For steps that need to be run on all platforms, modify `esy-build-steps.yml`.
