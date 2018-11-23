@@ -1,3 +1,5 @@
+[![Build Status](https://bryphe.visualstudio.com/esy-ci-scripts/_apis/build/status/bryphe.esy-ci-scripts)](https://bryphe.visualstudio.com/esy-ci-scripts/_build/latest?definitionId=11)
+
 # esy-ci-scripts
 ##### Azure CI Pipeline for building esy projects
 
