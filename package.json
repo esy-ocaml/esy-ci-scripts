@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Simple test project for a pipeline build", "license": "MIT",
   "esy": {
-    "build": "echo hello world!"
+    "build": "touch #{self.target_dir / self.name}.txt",
+    "install": "cp #{self.target_dir / self.name}.txt #{self.doc / self.name}.txt"
   },
   "dependencies": {
   }
