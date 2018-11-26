@@ -17,8 +17,21 @@ And I've been using essentially the same config for most platforms.
 
 - Copy [`azure-pipelines.yml`](azure-pipelines.yml) and [`esy-build-steps.yml`](esy-build-steps.yml) to your project's directory
 - Create a new [build pipeline](https://dev.azure.com) for your project in Azure DevOps
+- Copy the `.yml` files to your project's directory
 
 You can see the example pipeline in action [here](https://bryphe.visualstudio.com/esy-ci-scripts/_build?definitionId=11).
+
+## Pipeline types
+
+### `basic-esy-project`
+
+This is the minimal `esy` pipeline that builds cross-platform. It simply spins up a windows, linux, and mac machine, and runs `esy install` and `esy build`.
+
+### `basic-esy-project-withcaching`
+
+This is a slightly more advanced variation of the `basic-esy-project` pipeline, that incorporates caching the `esy` store. This is really helpful for Windows, as the `ocaml` compiler can take ~15 minutes to build. 
+
+You can enable the restoration of the cache once you have a green build (and the artifacts have been published) - just uncomment the lines in `azure-pipelines.yml` that reference `restore-build-cache.yml`.
 
 ## Customization
 
