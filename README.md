@@ -13,15 +13,11 @@ I've been moving many of my personal projects to Azure CI, for the following rea
 
 And I've been using essentially the same config for most platforms. 
 
-A few projects that are using this setup:
-- [Revery](https://github.com/bryphe/revery)
-- [Reason-reactify](https://github.com/bryphe/reason-reactify)
-
 ## Usage
 
+- Copy [`azure-pipelines.yml`](azure-pipelines.yml) and [`esy-build-steps.yml`](esy-build-steps.yml) to your project's directory
 - Create a new [build pipeline](https://dev.azure.com) for your project in Azure DevOps
 - Copy the `.yml` files to your project's directory
-- Profit!
 
 You can see the example pipeline in action [here](https://bryphe.visualstudio.com/esy-ci-scripts/_build?definitionId=11).
 
@@ -41,6 +37,15 @@ You can enable the restoration of the cache once you have a green build (and the
 
 - For steps that need to be run on all platforms, modify `esy-build-steps.yml`.
 - For steps that need to be run on a single machine / platform, modify `azure-pipelines.yml`
+
+## Examples
+
+- [Revery](https://github.com/bryphe/revery)
+- [Rejest](https://github.com/bryphe/rejest)
+- [Reason-reactify](https://github.com/bryphe/reason-reactify)
+- [Reason-glfw](https://github.com/bryphe/reason-glfw)
+- [esy-freetype2](https://github.com/esy-packages/esy-freetype2)
+- [esy-harfbuzz](https://github.com/esy-packages/esy-harfbuzz)
 
 ## Special Thanks
 
