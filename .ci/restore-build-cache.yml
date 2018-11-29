@@ -16,6 +16,7 @@ steps:
     continueOnError: true
 
   - task: CopyFiles@2
+    condition: and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
     inputs:
         sourceFolder: '$(System.ArtifactsDirectory)\cache-$(Agent.OS)-install'
         targetFolder: '$(ESY__CACHE_INSTALL_PATH)'
