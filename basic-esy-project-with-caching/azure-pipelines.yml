@@ -18,7 +18,7 @@ jobs:
   # TODO: Uncomment this when you have a green build, to enable caching
   # - template: restore-build-cache.yml
   - template: esy-build-steps.yml
-  - template: publish-build-cache.yml
+  # - template: publish-build-cache.yml
 
 - job: MacOS
   timeoutInMinutes: 0
@@ -33,7 +33,7 @@ jobs:
   # TODO: Uncomment this when you have a green build, to enable caching
   # - template: restore-build-cache.yml
   - template: esy-build-steps.yml
-  - template: publish-build-cache.yml
+  # - template: publish-build-cache.yml
 
 - job: Windows
   timeoutInMinutes: 0
@@ -46,7 +46,7 @@ jobs:
 
   steps:
   # TODO: Uncomment this when you have a green build, to enable caching
-  # - template: restore-build-cache.yml
+  - template: restore-build-cache.yml
   - template: esy-build-steps.yml
   - template: publish-build-cache.yml
 
