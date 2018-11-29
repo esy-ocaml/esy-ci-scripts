@@ -11,5 +11,3 @@ steps:
     continueOnError: true
   - script: esy install
   - script: esy build
-  # Run tests or any additional steps here
-  # - script: esy b dune runtest
